@@ -753,10 +753,25 @@ async def on_message(message):
         matching = [s for s in mystr if username in s]
         my_string = matching[0]
         my_string = my_string.split("\t")
-
-        if len(contentArray) == 2:
-            contentArray.append("4")
-
+            async def name(ctx):
+                
+                if ctx.message.channel.id == 800468752905797664: 
+                    await contentArray.append("3")
+                elif ctx.message.channel.id == 800468727324737586:
+                    await contentArray.append("4")
+                elif ctx.message.channel.id == 800468938629972038:
+                    await contentArray.append("5")
+                elif ctx.message.channel.id == 800468948939309117:
+                    await contentArray.append("6")
+                elif ctx.message.channel.id == 800468960348733461:
+                    await contentArray.append("7")
+                elif ctx.message.channel.id == 818585243560312852:
+                    await contentArray.append("8")
+                elif ctx.message.channel.id == 818585257393389658:
+                    await contentArray.append("9")
+                elif ctx.message.channel.id == 818585267924893706:
+                    await contentArray.append("10")   
+                
         # print(my_string)
         bad = False
         try:
